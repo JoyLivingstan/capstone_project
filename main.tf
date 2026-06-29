@@ -8,7 +8,7 @@ output "aws_user" {
   value = data.aws_caller_identity.current.arn
 }
 
-//create VPC
+//created VPC
 resource "aws_vpc" "project_vpc" {
 
   cidr_block = "10.20.0.0/16"
